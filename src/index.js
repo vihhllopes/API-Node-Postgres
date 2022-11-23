@@ -12,7 +12,7 @@ const pool = new Pool({
 const app = express()
 
 app.use(express.json())
-app.user(cors())
+app.use(cors())
 
 
 app.get('/', (req, res)=>{console.log('olá mundo')})
